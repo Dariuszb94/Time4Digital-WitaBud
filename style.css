@@ -293,26 +293,7 @@ left: 0%;
 		height:auto;
 		
 	}
-	@media screen and (max-width: 1024px){
-		.services-section{
-			display:grid;
-		grid-template-columns:50% 50%;
-		grid-template-rows:repeat(2, 50%) ;
-			width:100%;
-			height:auto;
-			
-		}
-	}
-	@media screen and (max-width: 480px){
-		.services-section{
-			display:grid;
-		grid-template-columns:100%;
-		grid-template-rows:repeat(4, 25%) ;
-			width:100%;
-			height:auto;
-			
-		}
-	}
+	
 	
 	
 	 .service span{
@@ -370,7 +351,32 @@ left: 0%;
 			rgba(0, 0, 0, 0.6)
 		  ),url("img/services/Panele.png");
 	}
-	
+.service-info:hover{
+	background-color: #f8db14;
+	color:black;
+	border: 2px solid black;
+}
+	@media screen and (max-width: 1024px){
+		.services-section{
+			display:grid;
+		grid-template-columns:50% 50%;
+		grid-template-rows:repeat(2, 50%) ;
+			width:100%;
+			height:auto;
+			
+		}
+	}
+	@media screen and (max-width: 480px){
+		.services-section{
+			display:grid;
+		grid-template-columns:100%;
+		grid-template-rows:repeat(4, 25%) ;
+			width:100%;
+			height:auto;
+			
+		}
+
+	}
 	/* recomendation-section*/
 	.recomendation-container{
 		display: grid;
