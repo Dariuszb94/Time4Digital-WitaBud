@@ -355,6 +355,7 @@ left: 0%;
 	background-color: #f8db14;
 	color:black;
 	border: 2px solid black;
+	opacity: 0.7;
 }
 	@media screen and (max-width: 1024px){
 		.services-section{
