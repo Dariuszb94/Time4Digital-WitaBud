@@ -77,7 +77,7 @@ a{
 	}
 	.menu-rectangle{
 		position: relative;;
-		top:16px;
+		top:13px;
 		width: 100%;
 	height: 3px;
 	background-color: white;
@@ -89,7 +89,7 @@ display: none;
 	
 	}
 header{
-	height: 30px;
+	height: 35px;
 }
 	}
 	@media screen and (max-width: 1024px){
@@ -688,8 +688,8 @@ width:50%;
 	}
 .callBar{
 	background-color: #f8db14;
-	padding-top:2vh;
-	padding-bottom:2vh;
+	padding-top:2vw;
+	padding-bottom:2vw;
 	display: flex;
 	flex-direction: row;
 	align-items:center;
@@ -873,8 +873,8 @@ color:#f8db14;
  	 }
  	 .copy{
  	 	background-color: #1e1e1e;
- 	 	padding-top:3vh;
- 	 		padding-bottom:3vh;
+ 	 	padding-top:3vw;
+ 	 		padding-bottom:3vw;
  	 		text-align:center;
  	 		color: #545454;
 font-family: Roboto;
@@ -890,10 +890,7 @@ font-weight: 400;
  	 	 	.contact-nav {
     justify-self:center;
 }
-.contact{
-	 padding-left:2vw;
-	
-}
+
 .contact-info-element{
  	padding-right:2vw;
  }
@@ -902,8 +899,8 @@ font-weight: 400;
 	padding-bottom:2vh;
 }
 .contact{
-	padding-right: 2vw;
-	padding-left: 2vw;
+	padding-right: 1vw;
+	padding-left: 1vw;
 }
 	}
  	 @media screen and (max-width: 768px){
