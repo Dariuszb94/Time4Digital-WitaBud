@@ -523,7 +523,7 @@ cursor: pointer;
 	width:0px;
 	top:12px;
 }
-	@media screen and (min-width: 768px){
+	@media screen and (min-width: 769px){
 		.open_box, #burger{
 	display: none;
 		}
@@ -745,14 +745,15 @@ font-weight: 400;
 .contact-telefon{
 color: #808080;
 font-family: Roboto;
-
+padding-right: 0px !important;
 font-weight: 400;
 }
 #contact-mail{
 	color: #f7db14;
 }
  .contact-info-element{
- 	padding-right:2vw;
+	 padding-right:1vw;
+	 font-size: 1.5vw;
  }
  #look{
  	color: #666666;
@@ -942,6 +943,7 @@ align-items: center;
 	}
 .contact-info-element{
 	font-size:2.5vw;
+	white-space: nowrap;
 }
 .contact-info{
 	display: grid;
