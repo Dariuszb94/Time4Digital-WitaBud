@@ -175,12 +175,12 @@ header{
    position: absolute;
    z-index: 1;
    color:white;
-top:30%;
+top:28%;
 width:100%;
 
 display: grid;
 grid-template-rows: repeat(5, 1fr);
-height:28vh;
+height:28vw;
 }
 .serviceBtn{
    background-color:  #f8db14;;
@@ -213,8 +213,7 @@ padding-top: 1.5vh;
 
 .intro-service{
    font-size:3.5vw;
-   margin-bottom:2vh;
-
+   margin-bottom:2vw;
 }
 .intro-owner{
    color: #d8d8d8;
@@ -230,7 +229,7 @@ max-width:60vw;
    justify-self: center;
 }
 .intro-bottom-text{
-   margin-top:7vw;
+   align-self: end;
 font-size:1vw;
 }
 
@@ -273,7 +272,7 @@ color: #f8db14;
 		}
 		.intro-slide-container{
 			top:15%;
-			height:23vh;
+			height:35vw;
 	}
 	.callBtn, .serviceBtn{
 		padding-top: 1.3vh;
@@ -294,6 +293,7 @@ position: relative;
 left: 0%;
 
 }
+
 	}
 	
 	/*service-section*/
@@ -302,6 +302,7 @@ left: 0%;
 	grid-template-columns:repeat(4, 25%) ;
 		width:100%;
 		height:auto;	
+		
 	}
 	 .service span{
 	color: #f8db14;
@@ -325,8 +326,10 @@ left: 0%;
 		display:grid;
 		align-items: center;
 		justify-items: center;
-		padding-top:8vh;
-		padding-bottom:8vh;  
+		padding-top:8vw;
+		padding-bottom:8vw;  
+		background-size: 100% 100%;
+		
 	}
 	 #service-2{
 	
