@@ -1095,6 +1095,10 @@ width: 100%;
 	 	.mail-send{
 	padding: 2vh 6vw 2vh 6vw;
 }
+.mail-text {
+
+    margin-top: 2vw;
+}
  .article-content{
 	display: flex;
 flex-direction: column;
