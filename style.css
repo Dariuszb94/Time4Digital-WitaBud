@@ -74,7 +74,8 @@ a{
 	.header-menu{
 		align-self: center;
 		justify-self: flex-start;
-	  
+		position: relative;
+		right: 28px;
 	}
 	.menu-rectangle{
 		position: relative;;
@@ -648,7 +649,18 @@ transform:rotate(180deg);
 		.realization-header{
 			display: grid;
 			grid-template-columns: 50% 50%;
+			width: 100%;
 		}
+	.realization-header-info, .realization-more{
+		justify-self: end;
+	}
+	.realization-header-info{
+		text-align: justify;
+	}
+	.realization-text {
+	
+		font-size: 1.5vw;
+	}
 		}
 		@media screen and (max-width: 768px){
 		.realization-container{
@@ -800,8 +812,12 @@ font-family: Roboto;
 padding-right: 0px !important;
 font-weight: 400;
 }
-#contact-mail{
+#contact-mail a{
 	color: #f7db14;
+	font-size:1.3vw
+}
+#contact-mail {
+
 	font-size:1.3vw
 }
  .contact-info-element{
@@ -962,9 +978,17 @@ font-weight: 400;
 }
 	}
  	 @media screen and (max-width: 768px){
+		#contact-mail a {
+	
+			font-size: 2vw;
+		}
+		.up {
+			position: relative;
+			bottom: 10px;
+		}
 		#contact-mail{
 		
-			font-size:2.2vw
+			font-size:2.4vw
 		}
 		.contact-social {
 		
@@ -982,7 +1006,7 @@ font-weight: 400;
 			position: initial;
 			 bottom: 0;
 			 right:0;
-			 flex-direction: column;
+			 flex-direction: column-reverse;
 	   
 			 }
 			 #social-logos{
@@ -1076,16 +1100,20 @@ font-weight: 400;
 	margin-top:2vh;
 	margin-bottom:2vh;
 }
-#form-name, #contact-form{
-	padding-top: 1vh;
-	padding-bottom: 1vh;
+#form-name, #contact-form, #subject, #form-content{
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+	padding-top: 1vw;
+	padding-left: 1vw;
+	box-sizing: border-box;
 }
 .mail-send{
 	background-color: #000000;
-	padding: 2vh 2vw 2vh 2vw;
+	padding: 2vw 3vw 2vw 3vw;
 	display: flex;
 	flex-direction: column;
 }
+
 #form-img{
 	justify-self:flex-start;
 	width: 15vw;
@@ -1095,11 +1123,13 @@ font-weight: 400;
 	flex-direction: column;
 	align-items: center;
 	justify-content:center;
-	font-family: Roboto;
+	font-family: Roboto !important;
+	
 }
 #form-name{
 		display: flex;
 	flex-direction: column;
+	
 }
 #submit-form{
 margin-top:5px;
@@ -1128,6 +1158,7 @@ cursor: pointer;
 }
 #mail-header{
 	width:100%;
+	padding-bottom:1vw;
 }
 .sidebar-text{
 	background-color: #f0f0f0;
@@ -1154,11 +1185,26 @@ flex-direction: column;
 }
 .form-div{
 width: 100%;
+
 }
 #form-div-name{
 	width: 100%;
  	}
 	 @media screen and (max-width: 768px){
+		#form-name, #contact-form, #subject, #form-content {
+			padding-top: 1.5vw;
+			padding-bottom: 1.5vw;
+		
+	
+		}
+		#sidebar-text1 {
+			font-size: 1.6vw;
+		
+		}
+		#sidebar-text2 {
+			font-size: 1.5vw;
+		
+		}
 	 	.mail-send{
 	padding: 2vh 6vw 2vh 6vw;
 }
@@ -1213,7 +1259,7 @@ justify-content: space-between;
 			margin-top:2vh;
 			display: grid;
 			grid-template-columns: repeat(4, 24%);
-		grid-template-rows: repeat(2, 45%): 
+
 		row-gap:1%;
 			column-gap:1%;
 			justify-content: space-between;
@@ -1245,8 +1291,8 @@ font-family: Roboto;
 #article-realizations-button{
 	background-color: #f8db14;
 	text-align: center;
-	padding-top:2vh;
-	padding-bottom:2vh;
+	padding-top:2vw;
+	padding-bottom:2vw;
 }
 #article-realizations-button a{
 color: #ffffff;
@@ -1260,11 +1306,21 @@ font-size:1.6vw;
 			grid-template-columns: repeat(3, 31%);
 		grid-template-rows: repeat(3, 33%): 
 		}
+		.article-realization-text{
+			font-size:1.2vw;
+		
+		   }
  	}
  	 @media screen and (max-width: 768px){
  #realization-4, #realization-5, #realization-6, #realization-7, #realization-8{
  	display: none;
  }
+ .article-realization-text {
+    
+	padding-left: 3vw;
+	padding-right: 3vw;
+  
+}
  	#article-realizations-content{
 			grid-template-columns:100%;
 		grid-template-rows: repeat(3, 33%): 
@@ -1303,6 +1359,9 @@ text-align: center;
  	.article-realization-text p{
 			text-align: center;
 		}
+		.article-realization-text{
+			align-self:center;
+		}
 		}
 
 /*Article-more*/
@@ -1324,10 +1383,7 @@ text-align: center;
 font-size:2vw;
 font-weight: 700;
 	}
-	.article-more-2-element{
-		border: 1px solid black;
-		color: black;
-	}
+
 #article-more-2{
 	display: flex;
 	flex-direction: row;
@@ -1336,11 +1392,13 @@ font-weight: 700;
 		.article-more-2-element{
 			margin-left:1vw;
 			margin-right:1vw;
-			padding-right: 1vw;
-			padding-left: 1vw;
-			padding-top: 1vw;
-			padding-bottom: 1vw;
+			padding-right: 1.5vw;
+			padding-left: 1.5vw;
+			padding-top: 1.5vw;
+			padding-bottom: 1.5vw;
 			font-size: 2vw;
+			border: 1px solid black;
+		color: black;
 		}
 
 
@@ -1350,4 +1408,13 @@ font-weight: 700;
 				grid-template-rows: repeat(3, 33%);
 				grid-gap: 1vh;
 				text-align: center;
-	 	}
+		 }
+		 #article-more {
+		
+			padding-bottom: 2vh;
+	
+		}
+
+		}
+		 
+	
