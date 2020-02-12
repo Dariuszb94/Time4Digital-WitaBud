@@ -83,16 +83,7 @@ a{
 	height: 3px;
 	background-color: white;
 	}
-			@media screen and (max-width: 768px){
-			
-.menu-items{ 
-display: none;
-	
-	}
-header{
-	height: 35px;
-}
-	}
+
 	@media screen and (max-width: 1024px){
 		.menu-element{
 		margin-right:0.5vw;
@@ -100,7 +91,16 @@ header{
 	font-size:95%;
 	}
 	}
-		
+	@media screen and (max-width: 768px){
+			
+		.menu-items{ 
+		display: none;
+			
+			}
+		header{
+			height: 35px;
+		}
+			}
 	/*intro-section */
 	body, html{
 			width: 100%;
@@ -192,7 +192,6 @@ height:28vw;
 .callBtn{
 background-color: black;
    color: #f8db14;
-
 	   margin-top:20px;
 }
 .callBtn, .serviceBtn{
@@ -200,7 +199,7 @@ padding-top: 1.5vw;
    padding-bottom: 1.5vw;
    padding-left: 1.5vw;
    padding-right: 1.5vw;
-   font-size:1.2vw;
+   font-size:1.5vw;
    opacity: 0.7;
 }
 .callBtn:hover{
@@ -231,7 +230,7 @@ max-width:60vw;
 }
 .intro-bottom-text{
    align-self: end;
-font-size:1vw;
+font-size:1.2vw;
 }
 
 .intro-bottom-img{
@@ -241,22 +240,18 @@ font-size:1vw;
 .intro-bottom-text a:hover{
 color: #f8db14;
 }
-@media screen and (max-width: 480px){
-	.intro-btn{
-		display: flex;
-		flex-direction: column;
+@media screen and (max-width: 1024px){
+	.intro-slide-container{
+		justify-content: center;
+		text-align: center;
 	}
-	.callBtn {
-		margin-top: 1vh;
-	}
-	.intro-bottom-text {
-		margin-top: 3vw;
-		font-size: 1vw;
-	}
-	.arrow{
-	 top:80%
-	}
+	.intro-owner,.intro-service,.intro-btn{
+position: relative;
+left: 0%;
+
 }
+
+	}
 	@media screen and (max-width: 768px){
 		.container-intro{
 			border: none;
@@ -283,19 +278,27 @@ color: #f8db14;
 	
 		}
 	}
-
-	@media screen and (max-width: 1024px){
-	.intro-slide-container{
-		justify-content: center;
-		text-align: center;
+	@media screen and (max-width: 480px){
+		.intro-btn{
+			display: flex;
+			flex-direction: column;
+		}
+		.callBtn {
+			margin-top: 1vh;
+		}
+		.intro-bottom-text {
+			margin-top: 3vw;
+		
+		}
+		.arrow{
+		 top:80%
+		}
+		.container-intro{
+		
+			padding-bottom: 48%; 
+		}
 	}
-	.intro-owner,.intro-service,.intro-btn{
-position: relative;
-left: 0%;
-
-}
-
-	}
+	
 	
 	/*service-section*/
 	.services-section{
@@ -436,6 +439,20 @@ left: 0%;
 			font-size:1.2vw;
 		
 	}
+
+	@media screen and (max-width: 1024px){
+		.first-recomendation, .second-recomendation, .third-recomendation{
+		
+			grid-template-rows: 40% 60%;
+			grid-template-columns: 100%;
+	
+		}
+		.recomemdation-nameAndText{
+		text-align:center;
+			
+		}
+	
+	}
 	@media screen and (max-width: 768px){
 		.recomendation-container{
 	
@@ -468,20 +485,6 @@ left: 0%;
 			transform: scale(1.2);
 		}
 	}
-	@media screen and (max-width: 1024px){
-		.first-recomendation, .second-recomendation, .third-recomendation{
-		
-			grid-template-rows: 40% 60%;
-			grid-template-columns: 100%;
-	
-		}
-		.recomemdation-nameAndText{
-		text-align:center;
-			
-		}
-	
-	}
-
 
 	/* menu */
 .menuAndMain{
