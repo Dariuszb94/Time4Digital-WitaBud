@@ -3,9 +3,10 @@
   font-family: LeagueSpartan;
   src: url(fonts/league-spartan/LeagueSpartan-Bold.otf);
 }
-html{
+html, a, p{
 	font-family:LeagueSpartan;
 }
+
 .main{
 	display: flex;
 	flex-direction: column;
