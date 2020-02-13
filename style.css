@@ -1068,9 +1068,10 @@ background-color: #f8db14;
 .banner h1{
 	color: #736718;
 font-weight: 700;
-padding-left:10vw;
+padding-left:13vw;
 padding-top:1vw;
 padding-bottom:1vw;
+font-size: 2.5vw;
 }
 
 /*content*/
@@ -1081,7 +1082,7 @@ padding-bottom:1vw;
 	grid-gap:5vw;
 	padding-right:13vw;
 	padding-left:13vw;
-	margin-top:5vh;
+	margin-top:3vw;
 }
 #article-1{
 color: #191919;
@@ -1339,7 +1340,7 @@ justify-content:center;
 width: 90%;
 		}
 		.article-realization-text h4{
-font-size:2vw;
+font-size:1.8vw;
 		}
  	.article-realization-text p{
 			font-size:2vw;
